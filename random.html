@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" src="scripts/random.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/main1.css" />
+<script type="text/javascript">
+function computeRandom() {
+	minval = document.randomForm.minInput.value;
+	maxval = document.randomForm.maxInput.value;
+	deltaval = maxval - minval;
+	randomResult = ran(deltaval) + minval;
+	var resultField = document.getElementById('random_result');
+	resultField.innerHTML = randomResult; 
+}
+</script>
+<title>Coho Math</title>
+</head>
+
+<body>
+
+
+<div class="header">
+	<h1>Coho Math</h1>
+	<h2>Math functions explained!</h2>
+</div>
+
+<div class="navigator"><a name="cua"></a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="Factorial.html">Factorial</a></li>
+		<li><a href="summorial.html">Summorial</a></li>
+		<li class="activeNavigator"><a href="#">Random</a></li>
+	</ul>
+</div>
+	
+<div id="content">
+<h1>Random</h1>
+<p>Random generates a positive integer between the min and max values.
+ </p>
+
+<form name="randomForm">
+<table>
+<tr><td>Min:</td><td><input name="minInput" type="text"/></td></tr>
+<tr><td>Max:</td><td><input name="maxInput" type="text"/></td></tr>
+<tr><td>Result:</td><td><span id="random_result">result</span></td></tr>
+</table>
+<p><input type="button" value="Calculate Random" onclick="computeRandom()"/></p>
+</form>
+</div>
+
+</body>
+
+</html>

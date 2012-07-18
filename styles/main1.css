@@ -1,0 +1,310 @@
+﻿body 
+{
+	font-family:  Verdana, Helvetica, Arial, sans-serif;
+  	background-color: white;
+  	font-size: 0.85em;
+  	margin: 10px;
+}
+
+html 
+{
+	font-family:  Verdana, Helvetica, Arial, sans-serif;
+  	background-color: white;
+  	font-size: 0.85em;
+  	margin: 10px;
+}
+
+li {
+	padding: 0px 0px 4px 0px;
+	list-style-type: none;
+}
+
+
+.header div {
+	width: 100%;
+	background: url('../images/HeaderBackground.png');
+	background-repeat: repeat-x;
+	background-color: #6882C0;
+}
+
+
+h1
+{
+	margin: 0;
+	padding: 5px 0 0  0;
+	color: maroon;
+	font-size: 150%;
+}
+
+h2
+{
+	margin: 0;
+	padding: 0px 0 5px 0;
+	color: #003399;
+	font-style: italic;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+h3
+{
+	margin: 0;
+	padding: 10px 0 0px 0;
+	color: maroon;
+	font-variant: small-caps
+	font-size: 110%;
+	font-weight: bold;
+}
+
+
+h4
+{
+	margin: 0;
+	padding: 15px 0 5px 0;
+	color: #336699;
+	font-size: 100%;
+	font-style: italic;
+	border-bottom: 1px dotted #dddddd;
+}
+
+h5
+{
+	margin: 0;
+	padding: 10px 0 5px 0;
+	color: #666666;
+	font-size: 100%;
+	font-weight: bold;
+}
+
+h6
+{
+	margin: 0;
+	padding: 5px 0 5px 0;
+	color: #666666;
+	font-size: 100%;
+	font-style: italic;
+}
+
+
+p
+{
+	font-size: 96%;
+	color: #333333;
+}
+
+.contact {
+	width: 180px;
+	border: none;
+	padding: 5px;
+	background-color: 
+}
+
+em {
+	font-weight: bold;
+	font-style: italic;
+	color: #666666;
+}
+
+.contact p {
+	padding: 0;
+	margin: 0;
+}
+
+.navigator {
+	font-size: 95%;
+	padding: 0;
+	border-bottom: 1px solid #AAA;
+	text-align: right;
+	margin: 4px 0 0 0;
+}
+.navigator ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.4em;
+}
+.navigator li {
+	display: inline;
+}
+
+.navigator a:visited
+ {
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 1px solid #000000;
+	background: url('../images/NavigatorActive.png');
+    background-position: center;
+	background-repeat: repeat-x;
+}
+
+.navigator a:link
+ {
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 1px solid #000000;
+	background: url('../images/NavigatorActive.png');
+    background-position: center;
+	background-repeat: repeat-x;
+}
+.navigator a:hover
+{
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	text-decoration:underline;
+	border: 1px solid #000000;
+	background: url('../images/NavigatorHover.png');
+    background-position: center;
+	background-repeat: repeat-x;
+}
+
+.activeNavigator {
+	display: inline;
+}
+
+.activeNavigator a:visited .activeNavigator a:hover
+ {
+ 	cursor: default;
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 1px solid #000000;
+	background: url('../images/NavigatorHover.png');
+   background-position: center;
+	background-repeat: repeat-x;
+}
+
+.activeNavigator a:link
+ {
+ 	cursor: default;
+	padding: 0.4em 1em 0.4em 1em;
+	color: #FFFFFF;
+	text-decoration: none;
+	border: 1px solid #000000;
+	background: url('../images/NavigatorHover.png');
+   background-position: center;
+	background-repeat: repeat-x;
+}
+
+/* TOC styles */
+.toc {
+	vertical-align: top;
+	font-size: 92%;
+	padding: 5px;
+	margin: 4px 5px 0px 10px;
+	border-right: 1px solid #AAA;
+}
+.toc ul {
+	list-style: none;
+	margin: 0;
+	padding: 20px 0 10px 0;
+}
+.toc li {
+	margin-bottom: 10px;
+}
+.toc a:visited
+ {
+	text-decoration: none;
+	border: 1px solid #FFF;
+}
+
+.toc a:link
+ {
+	text-decoration: none;
+	border: 1px solid #FFF;
+}
+.toc a:hover
+{
+	text-decoration: underline;
+	border: 1px solid #FFF;
+}
+/* content */
+td.content {
+	padding-top: 8px;
+	padding-left: 10px;
+}
+
+/* Project styles */
+.project {
+	//border: 1px solid;
+	border-color: #DDD;
+	padding: 15px;
+	margin-top: 4px;
+	//background-color: #F7FBFF;
+	width: 96%;
+}
+.project td {
+	padding: 5px;
+}
+.project p {
+	font-size: 96%;
+}
+.projectName {
+	text-align: left;
+	color: #003399;
+	font-weight: bold;
+	font-size: 100%;
+	padding-bottom: 4px;
+}
+.projectDate{
+	text-align: right;
+	font-weight: bold;
+	color: #003399;
+	padding-bottom: 4px;
+}
+.projectHeading {
+	font-weight: bold;
+	font-style: italic;
+	color: #666;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-transform: uppercase;
+}
+
+ul.projectList {
+	font-size: 96%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+p.projectList {
+	font-size: 96%;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+
+.projectRole {
+	color: #666;
+	font-weight: bold;
+	text-align: left;
+	font-size: 100%;
+	padding-bottom: 4px;
+}
+.projectCompany{
+	text-align: right;
+	padding-bottom: 4px;
+}
+
+.projectSmall {
+	margin: 0;
+}
+
+.projectText {
+	margin: 0 4px 0 0;
+	padding: 0 0 6px 0;
+}
+.projectText ul {
+	padding: 0;
+	margin: 0;
+}
+.projectText li {
+	padding: 0;
+	margin: 0 0 0 25px;
+	list-style-image: url('../images/SquareBullet.png');
+}
+
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<script type="text/javascript" src="scripts/factorial.js"></script>
+<link rel="stylesheet" type="text/css" href="styles/main1.css" />
+<script type="text/javascript">
+function computeFactorial() {
+	nvalue = document.FactorialForm.factorialInput.value
+	factorialResult = factorial(nvalue);
+	var resultField = document.getElementById('factorial_result');
+	resultField.innerHTML = factorialResult; 
+}
+</script>
+<title>Coho Math</title>
+</head>
+
+<body>
+
+
+<div class="header">
+	<h1>Coho Math</h1>
+	<h2>Math functions explained!</h2>
+</div>
+
+<div class="navigator"><a name="cua"></a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li class="activeNavigator"><a href="">Factorial</a></li>
+		<li><a href="summorial.html">Summorial</a></li>
+		<li><a href="random.html">Random</a></li>
+	</ul>
+</div>
+	
+<div id="content">
+<h1>Factorial</h1>
+<p> The factorial is the product of all positive integers less than or equal to n. For example,
+5! = 5 * 4 * 3 * 2 * 1 = 120
+ </p>
+
+<form name="FactorialForm">
+<input name="factorialInput" type="text" title="Factorial"/>&nbsp; =&nbsp; <span id="factorial_result">result</span>
+<p><input type="button" value="Calculate Factorial" onclick="computeFactorial()"/></p>
+</form>
+</div>
+
+</body>
+
+</html>

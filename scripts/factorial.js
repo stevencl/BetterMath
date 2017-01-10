@@ -1,4 +1,4 @@
-//Added a comment
+//Added a comment - added more detail
 function factorial(n) {
 	n = parseInt(n);
 	var result = 1;
